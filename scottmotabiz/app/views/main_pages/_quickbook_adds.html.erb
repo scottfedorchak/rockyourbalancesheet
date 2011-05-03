@@ -1,0 +1,28 @@
+<div id="intuit_logos">
+  <div id="contact_phone">
+    <h1>Contact Us</h1>
+    <p class="contact-box-text-color"><strong>Scott N. Mota</strong></p>
+    <p class="contact-box-text-color"><em>Bookkeeping - Payroll - Taxes</em></p>
+    <ul id="contact-box-list" class="contact-box-text-color">
+      <li id="li-contact-phone"><strong>(209) 210-8847</strong></li>
+      <li id="li-contact-email"><strong>motas@softcom.net</strong></li>
+    </ul>
+    <br/>
+  </div>
+  <hr/>
+<div class="affiliate_container">
+      
+      <a id="intuit_affiliate_logo" href="http://quickbooks.intuit.com/?priorityCode=3969702399&amp;kbid=4706&amp;img=quickbooks/7636-f1_qbg_133x75_05_wg.jpg&amp;sub=">
+        <img src="http://qbgdm.intuit.com/affiliates/quickbooks/7636-f1_qbg_133x75_05_wg.jpg" border="0">
+      </a>
+    </div>
+  <div id="blog_side_titles">
+  <h1 class="h1_standard">Blog Posts</h1>
+    <% @posts.each do |post| %>
+    <p class="blog_links"><%= link_to post.title, post %></p>
+
+    <% end %>
+    </div>
+
+
+</div>

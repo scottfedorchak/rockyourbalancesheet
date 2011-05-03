@@ -1,0 +1,107 @@
+<div class="white-bg-container">
+
+  <%= render "header" %>
+
+
+  <div class="main-left-double">
+
+
+    <h1 class="h1_standard">Blog</h1>
+    <h2 class="h2_standard">Latest Posts</h2>
+
+
+    <% if admin? %>
+        <%= link_to 'New Post', new_post_path %>
+    <% end %>
+
+
+    <% count = 0 %>
+    <% for post in @posts.each  %>
+
+        <%if count > 1 then %>
+          <% break %>
+        <% else %>
+
+         <div class="blog_posts">
+        <hr/>
+          <h2 class="h2_standard"><%= post.title %></h2>
+
+
+          <%= post.created_at.strftime("%m/%d/%Y") %>
+          <p><strong><%= post.name %></strong></p>
+           <p><%= raw post.content %></p>
+          <%= link_to 'View/Add Comments', post %>
+
+          <% if admin? %>
+              <!--<%= button_to 'Edit', {:action => "edit", :id => post.id} %>-->
+              <%= button_to "Delete Post", {:action => "destroy", :id => post.id}, :confirm => "Are you sure?", :method => :delete %>
+
+          <% end %>
+
+          </div>
+
+        <% end %>
+            <% count = count + 1 %>
+    <% end %>
+    <hr/>
+        <% if !admin? %>
+            <%= link_to 'admin login', '/login' %>
+        <% end %>
+
+        <% if admin? %>
+              <%= link_to 'admin logout', '/logout' %>
+        <% end %>
+
+  </div>
+
+  <br/>
+  <% if admin? %>
+      <%= link_to 'New Post', new_post_path %>
+  <% end %>
+
+
+<div class="inner-main-right-white-left">
+  <div class="affiliate_container">
+    <hr/>
+    <a id="intuit_affiliate_logo" href="http://quickbooks.intuit.com/?priorityCode=3969702399&amp;kbid=4706&amp;img=quickbooks/7636-f1_qbg_133x75_05_wg.jpg&amp;sub=">
+          <img src="http://qbgdm.intuit.com/affiliates/quickbooks/7636-f1_qbg_133x75_05_wg.jpg" border="0">
+        </a>
+      </div>
+
+    <h1 class="h1_standard">Blog Posts</h1>
+    <% @posts.each do |post| %>
+    <p class="blog_links"><%= link_to post.title, post %></p>
+
+    <% end %>
+
+</div>
+
+
+  <%= render "footer" %>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

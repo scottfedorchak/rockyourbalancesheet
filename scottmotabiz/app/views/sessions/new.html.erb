@@ -1,0 +1,31 @@
+<div class="white-bg-container">
+
+
+  <%= render "header" %>
+
+  <div class="main-left-double">
+
+    <div>
+      <%= flash[:notice] if flash[:notice] %>
+    </div>
+
+    <div class="blog_login">
+      <p>
+        <% form_tag :controller => 'sessions', :action => 'create' do %>
+            Password: <%= password_field_tag :password %>
+            <%= submit_tag ('Login!') %>
+        <% end %>
+      </p>
+    </div>
+  </div>
+
+    <div class="inner-main-right-white-left">
+
+
+  </div>
+
+
+  <%= render "footer" %>
+</div>
+
+

@@ -1,0 +1,20 @@
+
+<div class="blog_posts">
+
+  <p>
+    <%= comment.created_at.strftime("%m/%d/%Y") %>
+  <br/>
+
+  <%= comment.body %>
+  </p>
+
+  <% if admin? %>
+  <%= link_to 'Delete Comment', [comment.post, comment],
+          :conform =>  'Are you sure?',
+          :method => :delete %>
+  <% end %>
+  <hr/>
+</div>
+
+
+

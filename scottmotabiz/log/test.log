@@ -1,0 +1,46 @@
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 980190962) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "posts"[0m
+  Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"name"=>"MyString", "created_at"=>Thu Apr 28 04:53:34 UTC 2011, "title"=>"MyString", "updated_at"=>Thu Apr 28 04:53:34 UTC 2011, "id"=>980190962, "content"=>"MyText"}}
+Redirected to http://test.host/login
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "posts"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 980190962) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) AS count_id FROM "posts"
+  Processing by PostsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/login
+Completed 302 Found in 1ms
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 980190962) LIMIT 1
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/login
+Completed 302 Found in 1ms
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 980190962) LIMIT 1[0m
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc
+Rendered posts/_header.html.erb (92.8ms)
+Completed 200 OK in 113ms (Views: 111.3ms | ActiveRecord: 4.0ms)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 980190962) LIMIT 1[0m
+  Processing by PostsController#new as HTML
+Redirected to http://test.host/login
+Completed 302 Found in 1ms
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE ("posts"."id" = 980190962) LIMIT 1
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 980190962) LIMIT 1[0m
+Rendered posts/_header.html.erb (6.6ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "comments" WHERE ("comments".post_id = 980190962)) AS subquery
+Rendered comments/_comment.html.erb (0.0ms)
+Rendered comments/_form.html.erb (89.3ms)
+Completed 200 OK in 115ms (Views: 113.3ms | ActiveRecord: 1.0ms)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 980190962) LIMIT 1[0m
+  Processing by PostsController#update as HTML
+  Parameters: {"post"=>{"name"=>"MyString", "created_at"=>Thu Apr 28 04:53:34 UTC 2011, "title"=>"MyString", "updated_at"=>Thu Apr 28 04:53:34 UTC 2011, "id"=>980190962, "content"=>"MyText"}, "id"=>"980190962"}
+Redirected to http://test.host/login
+Completed 302 Found in 1ms

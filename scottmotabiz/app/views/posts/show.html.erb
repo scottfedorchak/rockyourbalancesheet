@@ -1,0 +1,88 @@
+<div class="white-bg-container">
+
+
+  <%= render "header" %>
+
+
+
+
+  <div class="main-left-double">
+
+    <h1 class="h1_standard">Blog</h1>
+
+    <p id="notice"><%= notice %></p>
+
+
+    <div class="blog_posts">
+      <h2 class="h2_standard"><%= @post.title %></h2>
+
+      <p>
+        <%= @post.created_at.strftime("%m/%d/%Y") %>
+        <br/>
+      </p>
+
+      <p>
+        <%= raw @post.content %>
+      </p>
+
+      <p><b>Comments</b></p>
+
+
+      <% @admin = false %>
+      <%= render :partial => "comments/comment", :collection => @post.comments %>
+
+
+      <h2>Add a Comment:</h2>
+      <%= render 'comments/form' %>
+      <br/>
+
+      <%= link_to 'Back', :controller => 'posts', :action => 'index' %>
+
+    </div>
+    <br/>
+
+  </div>
+
+  <div class="inner-main-right-white-left">
+    <div id="contact_phone">
+      <h1>Contact Us</h1>
+
+      <p class="contact-box-text-color"><strong>Scott N. Mota</strong></p>
+
+      <p class="contact-box-text-color"><em>Bookkeeping - Payroll - Taxes</em></p>
+      <ul id="contact-box-list" class="contact-box-text-color">
+        <li id="li-contact-phone"><strong>(209) 210-8847</strong></li>
+        <li id="li-contact-email"><strong>motas@softcom.net</strong></li>
+      </ul>
+      <br/>
+    </div>
+
+    <div class="affiliate_container">
+      <hr/>
+      <a id="intuit_affiliate_logo" href="http://quickbooks.intuit.com/?priorityCode=3969702399&amp;kbid=4706&amp;img=quickbooks/7636-f1_qbg_133x75_05_wg.jpg&amp;sub=">
+            <img src="http://qbgdm.intuit.com/affiliates/quickbooks/7636-f1_qbg_133x75_05_wg.jpg" border="0">
+          </a>
+        </div>
+
+  </div>
+
+  <%= render "footer" %>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

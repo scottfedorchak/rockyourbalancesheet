@@ -1,0 +1,670 @@
+
+body {
+    margin-top:0px;
+    padding: 0;
+    font: 14px sans-serif;  
+    background-image: url(../images/dinpattern-stripe.gif);
+
+}
+
+#container {
+    position:relative;
+ 	margin-left: auto;
+    margin-right: auto;
+	width: 1010px;
+    background: url(../images/slices/background-thin-repeat.jpg) repeat-y center;
+    border: groove 3px #999900;
+}
+
+.white-bg-container {
+    position:relative;
+ 	margin-left: auto;
+    margin-right: auto;
+	width: 1010px;
+    color:#fff;
+    /*background-color:#000;*/
+    background: url(../images/slices/background-thin-repeat.jpg) repeat-y center;
+    /*border: groove 3px #666666;*/
+}
+
+
+.img-with-border{
+   border: groove 3px #999900;
+}
+
+.centered-content{
+    text-align:center;
+}
+
+.img-float-right{
+    float:right;
+    padding:5px;
+    margin:5px;
+}
+
+.img-float-left{
+    float:left;
+    padding:5px;
+    margin:10px;
+}
+
+#intuit-payroll{
+    margin-top: 210px;
+}
+
+/* 3 column layout */
+#main-left{
+    float:left;
+    width:486px;
+    color: #000;
+    margin-top: 200px;
+    margin-left:0px;
+    padding: 0px 15px 10px 5px;
+    background-color:#fff;
+    background: url("../images/slices/gradient-left.jpg") no-repeat;
+
+}
+
+#main-left-shop-online{
+    font-family: Arial, Helvetica, sans-serif;
+    float:left;
+    width:700px;
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 0px 5px 5px 5px;
+
+}
+
+.main-left-double{
+    float:left;
+    width:757px;
+    /*background-color: #ffffff;*/
+    color: #000000;
+    margin-top: 200px;
+    padding: 0px 10px 10px 10px;
+    /*border-right: groove 4px #000;*/
+    background: url("../images/slices/gradient-left.jpg") repeat-x;
+}
+
+
+
+#inner-main-left {
+	float: left;
+    width:251px;
+    background: url("../images/slices/gradient-center.jpg") no-repeat;
+	color: #000;
+    padding: 0px 10px 10px 10px;
+    background-color:#DCDCDC;
+	font-size: .9em;
+}
+
+#inner-main-right {
+	float: right;
+    width:209px;
+    background: url("../images/slices/gradient-right.jpg") no-repeat;
+	background-color: #202020;
+    padding: 0px 10px 10px 10px;
+    color: #fff;
+	font-size: .9em;
+
+}
+
+.inner-main-right-white-left  {
+	float: right;
+    width:209px;
+    background: url("../images/slices/gradient-right.jpg") no-repeat;
+	background-color: #202020;
+    margin-top:200px;
+    padding: 0px 10px 10px 10px;
+    color: #fff;
+	font-size: .9em;
+}
+
+
+#main-center{
+    float:right;
+    width:500px;
+    margin-top: 200px;
+    margin-left: 0px;
+    color: #000;
+}
+
+
+#adds{
+    width:215px;
+    text-align:center;
+    color: #000;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 45px;
+}
+
+#adds img {
+    padding: 5px 5px 20px 5px;
+}
+
+
+.list_style_none li{
+    list-style:none;
+}
+
+
+.content-banners {
+    text-align:center;
+    margin: 10px 0px 0px 0px;
+}
+
+.image_with_border img{
+    border: groove 3px #006600;
+}
+
+.cert_logos{
+    margin-bottom:30px;
+
+}
+
+
+
+#scott-logo-head{
+    margin-right: 30px;
+}
+
+
+.social_icons{
+    padding-top:10px;
+    text-align:left;
+}
+
+#certs_list {
+    font: italic 12px sans-serif;
+    list-style:none;
+}
+
+
+
+#logo-scott-mota-biz img{
+    margin:10px 20px 10px 10px;
+    /*border: groove 4px #cc9900;*/
+}
+
+
+#main {
+    font-size: 1em;
+
+    width:1010px;
+	
+
+}
+
+#main img{
+    float: left;
+    padding: 10px 40px 5px 0px;
+
+}
+
+#main-right img {
+    padding: 10px 10px 5px 0px;
+}
+
+
+
+
+.main_content{
+    color: #ffffff;
+    line-hight: 1.5;
+    margin: 10px 10px 20px 10px
+
+}
+#services_list ul{
+    font-size:1.2em;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 0px 0px 0px 30px;
+}
+
+#services_list li{
+    list-style: square;
+    font-size: .9em;
+    padding:10px;
+}
+#faq_list ol{
+    font-size:1.2em;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 5px 0px 0px 30px;
+}
+
+#faq_list li{
+    font-size: .9em;
+    padding:10px;
+}
+
+
+
+#contact_list ul{
+    font-size:1.2em;
+    color: #fff;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 0px 0px 15px 30px;
+}
+
+#contact_list li{
+    list-style:none;
+    font-size: .9em;
+}
+
+.smaller_italic{
+    font-size: .7em;
+    font-style: italic;
+}
+
+
+
+
+/********** Top navigation *************/
+#navlist
+{
+	height: 32px;
+	padding: 19px 0px 3px 31px;
+
+}
+
+#navlist a, #navlist a:link, #navlist a:visited
+{
+border: 1px solid #FFFFFF;
+padding: 14px;
+padding-left: 0.5em;
+padding-right: 0.5em;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+#navlist a:hover, #navlist a:active, #navlist a:focus
+{
+border: 1px solid #CDCDB3;
+padding: 15px;
+padding-left: 0.5em;
+padding-right: 0.5em;
+text-decoration: none;
+}
+
+#navlist li
+{
+padding-right: 1px;
+display: inline;
+font-size: 0.9em;
+}
+
+#navlist ul
+{
+margin: 0px;
+padding: 0px;
+}
+
+#navlist #active a {
+	background-color: #CDCDB3;
+	color: #000000;
+	font-weight: bold;
+}
+
+
+.h1_standard {
+	font-size:1.4em;
+    color: #ffffff;
+    font-style:italic;
+    margin-bottom:15px;
+    border-bottom: 2px solid #999900;
+
+}
+
+.h2_standard {
+	font-size:1.2em;
+    color: #cc9900;
+    font-style:italic;
+    margin-bottom:10px;
+
+
+}
+
+.h3_standard {
+	font-size: 1em;
+    font-family: sans-serif;
+    color: #cc9900;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding-left: 2px;
+}
+
+.h3_blue {
+    color: #0066cc;
+}
+
+textarea {
+        width: 470px;
+        height: 100px;
+        border: 3px solid #cccccc;
+        padding: 5px;
+        font-family: Tahoma, sans-serif;
+
+}
+
+#Table_01{
+    height:200px;
+    border: 3px solid #0033cc;
+
+}
+
+#faq_contact_info{
+    list-style:none;
+}
+
+
+a:link {color: #000000; text-decoration: underline; }
+a:active {color: #000000; text-decoration: underline; }
+a:visited {color: #660066; text-decoration: underline; }
+a:hover {color: #000099; text-decoration: none; }
+
+
+/*  bacchus blog rss feed styles */
+
+#rss_bacchus_title{
+    font: italic 14px sans-serif;
+    text-decoration:underline;
+    padding: 5px 0px 5px 0px;
+
+}
+
+#rss_bacchus_time{
+    font: bold 10px sans-serif;
+    color: #ffffcc;
+    padding: 5px 0px 5px 0px;
+
+}
+
+#rss_bacchus_body{
+    padding-bottom: 10px;
+}
+
+#twitter_header{
+    font: italic 18px sans-serif;
+    text-align: left;
+    margin-top: 0px;
+}
+
+#twitter_container {
+    width: 290px;
+    font: bold 14px sans-serif;
+    text-align:left;
+    margin-top:50px;
+
+    border-top: 2px solid #e9d26a;
+
+
+}
+
+#twitter_intro{
+    color: #ffffcc;
+    font: bold 16px sans-serif;
+    padding-bottom: 0px;
+
+
+}
+
+#rss_bacchus_content{
+    font: 12px sans-serif;
+    text-align:left;
+    color: #ffffff;
+    width:280px;
+
+}
+
+/* wii rss styles */
+#rss_wii_title{
+    font: italic 14px sans-serif;
+    text-decoration:underline;
+    padding: 5px 0px 0px 5px;
+
+}
+
+#rss_wii_time{
+    font: bold 10px sans-serif;
+    color: #ffffcc;
+    padding: 5px 0px 5px 5px;
+
+}
+
+#rss_wii_body{
+    padding: 0px 0px 10px 5px;
+}
+
+
+#rss_wii_header{
+    font: italic 18px sans-serif;
+    text-align: left;
+    margin-top: 0px;
+}
+
+#rss_wii_container {
+    width: 400px;
+    font: bold 14px sans-serif;
+    text-align:left;
+    margin-top:70px;
+    border-top: 2px solid #e9d26a;
+
+}
+
+#rss_wii_intro{
+    color: #ffffcc;
+    font: bold 16px sans-serif;
+    padding-bottom: 5px;
+
+
+}
+
+#rss_wii_content{
+    font: 12px sans-serif;
+    text-align:left;
+    color: #ffffff;
+    width:590px;
+
+}
+
+
+/* footer styles */
+#footer {
+	clear: both;
+    background: url(../images/slices/footer-lodi-accounting.jpg) no-repeat;
+    font: 10px sans-serif;
+    height:45px;
+    text-align: center;
+    color:#000;
+}
+
+
+#footer li{
+   list-style:none;
+   display:inline;
+   padding: 5px 5px 5px 0px;
+
+}
+
+#footer-copyright{
+    margin: 5px 0px 5px 0px;
+}
+
+#footer-nav-bar{
+    margin: 5px 0px 5px 0px;
+    padding-top: 10px;
+    text-align:center;
+}
+
+
+
+/* intuit affiliate store front styles */
+main-left-shop-online p {
+    font-size: 9px;
+}
+
+main-left-shop-online a:link, main-left-shop-online a:visited, main-left-shop-online a:hover, main-left-shop-online a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#nav a, #nav a:link, a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#side1 {
+    background-color: #FCC918;
+    font-size: 14px;
+    font-weight: bold;
+    color: #E00000;
+
+    padding: 5px;
+}
+
+#gb {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #FFFF99;
+
+}
+
+#gb2 {
+    font-size: 10px;
+    color: #FFFFFF
+
+}
+
+#rb {
+    font-size: 8px;
+}
+
+#h1_intuit_affiliate_store_front {
+    color:#000;
+    text-decoration:none;
+}
+
+#h2_intuit_affiliate_store_front {
+    color:#000
+}
+
+
+#h4_intuit_affiliate_store_front {
+    color:#64B843
+}
+
+
+/* contact styles */
+#contact_phone{
+    /*background-color: #ffffff;*/
+    /*color: #fff;*/
+    padding:10px;
+    margin: 25px 0px 0px 0px;
+    text-align:left;
+    /*border: solid 2px #996600;*/
+    width:205px;
+}
+
+#contact_phone h1{
+    margin:0px 0px 5px 0px;
+    color: #996600;
+    border-bottom: 2px solid #996600;
+
+}
+
+.contact_us_contact_list {
+    color: #000;
+}
+
+.contact-box-text-color{
+    color: #fff;
+}
+
+
+#contact_phone ul {
+    padding: 0px;
+    margin-top:10px;
+}
+
+#contact_phone p{
+    margin:0px;
+}
+
+#li-contact-phone{
+
+    list-style:none; /* removes the default bullet */
+    background: url(../images/icons/iphone-icon-small.png) no-repeat left center;
+    /*adds a background image to the li*/
+    padding: 10px 0px 5px 35px;
+    /* this would be the width of the background image, plus a little more to space things out properly */
+}
+
+#li-contact-email{
+
+    list-style:none; /* removes the default bullet */
+    background: url(../images/icons/email-icon-small.png) no-repeat left center;
+    /*adds a background image to the li*/
+    padding: 10px 0px 5px 35px;
+    /* this would be the width of the background image, plus a little more to space things out properly */
+}
+
+#li-contact-home-phone{
+
+    list-style:none; /* removes the default bullet */
+    background: url(../images/icons/home-icon.png) no-repeat left center;
+    /*adds a background image to the li*/
+    padding: 10px 0px 5px 35px;
+    /* this would be the width of the background image, plus a little more to space things out properly */
+}
+
+#li-contact-fax{
+
+    list-style:none; /* removes the default bullet */
+    background: url(../images/icons/fax-icon.png) no-repeat left center;
+    /*adds a background image to the li*/
+    padding: 10px 0px 5px 35px;
+    /* this would be the width of the background image, plus a little more to space things out properly */
+}
+
+#google_map{
+    float:left;
+    padding: 20px;
+}
+
+.affiliate_container{
+    text-align:center;
+}
+
+.shop_box_container {
+    float:left;
+    width:300px;
+    padding:10px 20px 10px 10px;
+}
+
+/*  blog styles */
+.blog_posts{
+    margin: 50px 30px 50px 30px ;
+}
+
+.blog_links a{
+    color: #cccc00;
+}
+
+.blog_links a:visited{
+    color: #fff;
+}
+
+#blog_side_titles {
+    text-align:left;
+}
+
+.blog_login{
+    margin:40px 40px 200px 40px;
+
+}

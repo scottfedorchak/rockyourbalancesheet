@@ -1,0 +1,76 @@
+<div class="white-bg-container">
+
+
+  <%= render "header" %>
+
+  <div class="main-left-double">
+    <div class="content-banners">
+    </div>
+    <h1 class="h1_standard">Payroll, Bookkeeping, Taxes, Quickbooks...</h1>
+
+    <div class="centered-content">
+
+      <h2 class="h2_standard">Scott N. Mota will Rock Your Balance Sheet!</h2>
+      <ul id="certs_list">
+
+        <li>California Tax Education Council Registered Tax Preparer</li>
+        <li>Certified QuickBooks Pro Advisor</li>
+      </ul>
+
+      <div id="scott-logo-head">
+        <%= image_tag ("../../../images/scott-mota-head-shot-accounting-lodi-galt-ca-backdrop.jpg", :class => "nick-profile-image") %>
+        <%= image_tag ("../../../images/intuit-quickbooks-pics/09-ProAdvisor-QB-76x120.gif", :class=>"cert_logos") %>
+        <%= image_tag ("../../../images/financial_pics/CTEC-california-tax-education-council.jpg", :class=>"cert_logos") %>
+      </div>
+    </div>
+
+
+
+
+    <p>Scott Mota has been Rock'n the accounting world for 21 years, proudly providing bookkeeping, payroll, and tax
+      preparation services to the Central Valley. The unparalleled service, competitive prices, personalized attention
+      and overall value are why customers keep returning. We look forward to your patronage.
+    </p>
+    <p>Areas of specialty include:</p>
+    <ul>
+      <li>Generate financial accounting, cost accounting, accounts payable, accounts receivable and individual and
+        Corporate tax returns.
+      </li>
+      <li>Organize and establish controls within the accounting department.</li>
+      <li>Implement computerized financial systems using Quickbooks.</li>
+      <li>Manage financial accounting, cost accounting, payroll, accounts payable, credit and collections, billing,
+        insurance, and data processing.
+      </li>
+    </ul>
+    <hr/>
+    <p>Currently Rock'n the following areas:</p>
+    <ul>
+      <li>Lodi</li>
+      <li>Galt</li>
+      <li>Elk Grove</li>
+      <li>Sacramento</li>
+      <li>Rio Vista</li>
+      <li>Stockton</li>
+    </ul>
+    <%= link_to(image_tag("../../../images/icons/linkedin.png", :class=>"img-float-right"), "http://www.linkedin.com/pub/scott-mota/2b/a68/130") %>
+
+
+    <a href="http://quickbooks.intuit.com/product/accounting-software/retail-pos-solutions?kbid=4706&img=quickbooks/QB_POS_468x60.jpg&sub=8076">
+    <img src="http://qbgdm.intuit.com/affiliates/quickbooks/QB_POS_468x60.jpg" border="0"></a>
+
+  </div>
+
+
+  <div class="inner-main-right-white-left">
+
+    <div id="adds">
+      <%= render "quickbook_adds" %>
+    </div>
+
+  </div>
+
+
+  <%= render "footer" %>
+
+
+</div>
